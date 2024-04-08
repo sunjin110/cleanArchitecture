@@ -19,7 +19,7 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/articles")
+@RequestMapping("/api/articles")
 public class ArticleRestApi {
 
     private static final Logger logger = LogManager.getLogger(ArticleRestApi.class);
