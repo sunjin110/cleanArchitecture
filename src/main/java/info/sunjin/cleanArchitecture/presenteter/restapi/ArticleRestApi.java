@@ -8,8 +8,6 @@ import info.sunjin.cleanArchitecture.presenteter.response.article.ArticleListRes
 import info.sunjin.cleanArchitecture.presenteter.restapi.middleware.AccessLog;
 import info.sunjin.cleanArchitecture.presenteter.restapi.request.article.ArticleCreateRequest;
 import info.sunjin.cleanArchitecture.presenteter.restapi.request.article.ArticleUpdateRequest;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,9 +19,6 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/api/articles")
 public class ArticleRestApi {
-
-    private static final Logger logger = LogManager.getLogger(ArticleRestApi.class);
-
     @Autowired
     ArticleRepository articleRepo;
 
