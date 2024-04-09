@@ -38,4 +38,10 @@ public class ArticleRestApiTest {
         verify(articleRepo).getById("article_id");
     }
 
+    @Test
+    public void testDeleteArticle() {
+        var response = api.deleteArticle("article_id");
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        verify(articleRepo).deleteById("article_id");
+    }
 }
