@@ -27,8 +27,6 @@ public class ArticleRestApi {
     @Autowired
     ArticleRepository articleRepo;
 
-
-
     @AccessLog
     @PostMapping
     public ResponseEntity<HttpStatus> createArticle(@RequestBody ArticleCreateRequest request) {
